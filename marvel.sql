@@ -192,3 +192,8 @@ SELECT * FROM movies;
 
 UPDATE movies set show_time = '21:30' WHERE title = 'Guardians of the Galaxy';
 SELECT * FROM movies;
+
+-- 1. Research how to delete multiple entries from your table in a single command.
+
+DELETE FROM movies WHERE title IN  ('Guardians of the Galaxy 2', 'Doctor Strange'); 
+SELECT * FROM movies;
